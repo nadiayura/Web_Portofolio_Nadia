@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+.lexend-ExtraLight {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  .lexend-Regular {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .fa-brands {
+    color: #094067;
+  }
+
+  .fa-brands:hover {    
+    color: #3da9fc;
+  }
+
+  .text-heading{
+    color: #094067;
+  }
+
+  .text-pr{
+    color: #7394ba;
+  }
+
+  .btn-me{
+    background-color: #3da9fc;
+    color: #fffffe;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius:5px;
+  }
+
+  .btn-me:hover{
+    background-color: #094067;
+    color: #fffffe;
+  }
+
+  #aboutMe{
+    height: 100vh;
+    align-content: center;
+  }
+  #skills{
+   height: 100vh; 
+  }
+  .konten{
+    margin: 0px 10px 0px 10px;
+  }
+
+
+.card-porto {
+  position: relative;
+  width: 290px;
+  height: 254px;
+  background-color: #fffffe;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
+}
+
+.card-porto::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  width: 190px;
+  height: 254px;
+  margin: auto;
+  width: 280px;
+  height: 265px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #3DA9FC 0%, #094067 100% );
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-porto::after {
+  content: "";
+  z-index: -10;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg,  #094067 0%, #3DA9FC 100%  );
+  transform: translate3d(0, 0, 0) scale(0.90);
+  filter: blur(20px);
+}
+
+.heading-porto {
+  font-size: 15px;
+  color: #094067;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.card-porto p:not(.heading-porto) {
+  font-size: 10px;
+}
+
+.card-porto p:last-child {
+  color: #094067;
+  font-weight: 600;
+}
+
+.card-porto:hover::after {
+  filter: blur(30px);
+}
+
+.card-porto:hover::before {
+  transform: rotate(-90deg) scaleX(1.00) scaleY(1.05);
+}
+
+#portfolio, #carouselExperience{
+  height: 100vh;
+}
+
+  
+  @media screen and (max-width: 768px) {
+    .konten{
+      flex-direction: column-reverse;
+      align-items: center;
+      margin: 10px;
+    }
+    .img-profile{
+      width: 200px;
+    }
+    .profile{
+      display: flex;
+      justify-content: center;
+    }
+  }
